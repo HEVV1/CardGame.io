@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://sun9-34.userapi.com/c854128/v854128432/1c14b1/HCTckSaFrK8.jpg" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/skills.css">
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="stylesheet" href="CSS/servants.css">
+    <link rel="stylesheet" href="CSS/enemies.css">
+    <link rel="stylesheet" href="CSS/effects.css">
+    <link rel="stylesheet" href="CSS/text.css">
+
+
+    </head>
+  <body onload=VideoManager.setVideoFunction();>
+
+<!-- Contains video array with couple of video for background -->
+  <video id="Vid" onended=VideoManager.setVideoFunction(); muted ></video>
+
+<button class="sound"><i class="fas fa-volume-down"></i></i></button>
+
+  <div class="slidecontainer">
+    <input type="range" min="0" max="100" value="1" class="slider" id="myRange">
+    <h1 class="SoundValue"></h1>
+  </div>
+
+<!-- Main container which holding everything inside -->
+<div id="Container">
+
+<!-- Just couple of headers -->
+<div id="Header">
+  <p class = "Text2">FATE/Stay Night</p>
+  <h2 class = "Header2">Choose your servant</h2>
+</div>
+
+<div class="FightSpace"></div>
+
+<!-- Inteface div bassicaly it's our main menu when we can choose servants and read their description -->
+<div id="Interface">
+
+
+<a id="Holder1" data="Holder1" href="#" onclick="GameManager.setGameStart('Saber', 'Excalibur')">
+  <div class="Saber"></div>
+  <div class="Box1">
+    <h3 class="Header1">Saber</h3>
+    <p class="Text1">Loyal, independent and reserved, Saber seems cool
+      and indifferent, but in fact she carefully suppresses emotions,
+      concentrating only on achieving her goals.</p>
+  </div>
+</a>
+
+<a id="Holder2" data="Holder2" href="#" onclick="GameManager.setGameStart('Archer', 'UBW')">
+  <div class="Archer"></div>
+  <div class="Box1">
+  <h3 class="Header1">Archer</h3>
+  <p class="Text1">Archer is sarcastic and cynical—but under his hardened exterior lies a
+  complex and dark personality that unfolds throughout the story.
+  Though skilled with ranged weapons, he can hold his own in melee combat.</p>
+  </div>
+</a>
+
+<a id="Holder3" data="Holder3" href="#" onclick="GameManager.setGameStart('Lancer')">
+  <div class="Lancer"></div>
+  <div class="Box1">
+  <h3 class="Header1">Lancer</h3>
+  <p class="Text1">Lancer is a fierce but balanced warrior who enjoys combating a worthy opponent. He has a playful attitude and takes a very carefree approach to life. Lancers are hailed as the "Most Agile" of Servant classes.</p>
+  </div>
+</a>
+
+<a id="Holder4" data="Holder4" href="#" onclick="GameManager.setGameStart('Rider')">
+  <div class="Rider"></div>
+  <div class="Box1">
+  <h3 class="Header1">Rider</h3>
+  <p class="Text1">Rider summoned by Sakura Matou and Sinji Matou. No other description.</p>
+  </div>
+</a>
+
+<a id="Holder5" data="Holder5" href="#" onclick="GameManager.setGameStart('Assassin')">
+  <div class="Assassin"></div>
+  <div class="Box1">
+  <h3 class="Header1">Assassin</h3>
+  <p class="Text1">Assassin is entirely dependent on Caster for mana and cannot move freely
+  beyond the grounds of the Ryuudou Temple. Furthermore, he lacks most of
+  the usual parameters and abilities granted to his class.</p>
+  </div>
+</a>
+
+<a id="Holder6" data="Holder6" href="#" onclick="GameManager.setGameStart('Berserker')">
+  <div class="Berserker"></div>
+  <div class="Box1">
+  <h3 class="Header1">Berserker</h3>
+  <p class="Text1">Berserker is known to have three distinct Noble Phantasms, as shown on
+  his status page. However, due to the enchantment that obscured his identity.</p>
+  </div>
+</a>
+
+<a id="Holder7" data="Holder7" href="#" onclick="GameManager.setGameStart('Caster')">
+  <div class="Caster"></div>
+  <div class="Box1">
+  <h3 class="Header1">Caster</h3>
+  <p class="Text1">Caster is one of the physically-weakest Servants and relies mostly
+  on her powerful anti-Army magic, she does less well
+  in single combat.</p>
+  </div>
+</a>
+
+<!-- Interface [div] -->
+</div>
+<!-- Interface [div] -->
+<div id="ArenaAndAction">
+<div id="Actions"></div>
+<div id="Arena">
+    <div id="Box2"></div>
+    <div id="Box3"></div>
+</div>
+</div>
+
+<div id="Enemy"></div>
+
+<div id="Ending">
+<span id="Losing">You Loose</span>
+<span id="Winning">You Win</span>
+</div>
+
+<!-- Container [div] -->
+</div>
+<!-- Container [div] -->
+
+  </body>
+  <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="JS/GameManager.js"></script>
+  <script src="JS/Enemy.js"></script>
+  <script src="JS/Player.js"></script>
+  <script src="JS/skills.js"></script>
+  <script src="JS/game_style.js"></script>
+  <script src="JS/FightCalculation.js"></script>
+</html>

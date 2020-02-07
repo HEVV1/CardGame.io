@@ -1,0 +1,209 @@
+body{
+  overflow-x: hidden;
+}
+
+a{
+text-decoration: none;
+list-style: none;
+}
+
+#Vid{
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 50%;
+   left: 50%;
+   -webkit-transform: translateX(-50%) translateY(-50%);
+   transform: translateX(-50%) translateY(-50%);
+   z-index: -1000;
+   min-width: 100%;
+   min-height: 100%;
+   width: auto;
+   height: auto;
+z-index: -999;
+}
+/* Sound buttons */
+.sound {
+  position: absolute;
+  right: 33px;
+  top: 30px;
+  z-index: 4;
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.sound .fas {
+  color: white;
+  font-size: 25px;
+  -webkit-transition: ease-in-out 200ms;
+  -o-transition: ease-in-out 200ms;
+  transition: ease-in-out 200ms;
+}
+.sound .fas:hover {
+  color: cyan;
+}
+
+/* Slider Style */
+.slidecontainer {
+  visibility: hidden;
+  position: absolute;
+  right: 80px;
+  top: 35px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 200px;
+  z-index: 4;
+  -webkit-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  transform: translateX(200%);
+  -webkit-transition: ease-in-out 150ms;
+  -o-transition: ease-in-out 150ms;
+  transition: ease-in-out 150ms;
+}
+
+.slidecontainer .slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 4;
+  height: 20px;
+  width: 100%;
+  border-radius: 5px;
+  opacity: 0.5;
+  -webkit-transition: ease-in-out 150ms;
+  -o-transition: ease-in-out 150ms;
+  transition: ease-in-out 150ms;
+}
+.slidecontainer .slider:hover {
+  opacity: 0.7;
+}
+
+.slidecontainer .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  z-index: 4;
+  background-color: #141414;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-transition: ease-in-out 150ms;
+  -o-transition: ease-in-out 150ms;
+  transition: ease-in-out 150ms;
+ }
+
+.slidecontainer .slider::-webkit-slider-thumb:hover {
+  background-color: cyan;
+}
+
+
+.SoundValue {
+  color: white;
+  font-family: 'Coming Soon', cursive;
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Style */
+#Interface {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: lightblue; */
+  margin: auto;
+}
+#Interface a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#Interface .Box1 {
+  width: 220px;
+  padding: 0 10px 0 20px;
+  background-color: rgba(0, 0, 12, 0.4);
+}
+#Interface .Box4 {
+  width: 240px;
+  padding: 0 10px 0 20px;
+  background-color: rgba(0, 0, 12, 0.4);
+}
+#Enemy {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: lightblue; */
+  margin: auto;
+}
+#Enemy a {
+  display: flex;
+  flex-wrap: nowrap;
+}
+#Enemy .Box5 {
+  width: 340px;
+  padding: 0 10px 0 20px;
+  background-color: rgba(0, 0, 12, 0.4);
+}
+#Arena{
+    position: relative;
+  	margin: 10px auto 10px;
+  	width: 450px;
+  	height: 200px;
+  	background: linear-gradient(0deg, #000, #272727);
+    display: none;
+}
+.Box2{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 30px 0;
+}
+.Box3{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 50px 0;
+}
+#Ending{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: auto;
+}
+.WTF{
+  display: flex;
+}
+
+.Skills{
+  background-color: rgba(0, 0, 12, 0.4);
+  display: grid;
+  width: 100px;
+  grid-template-rows: auto auto auto auto;
+}
+
+.FightSpace{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  justify-content: center;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* Put the Arena and Attack button below the servants */
+#ArenaAndAction{
+  grid-column: 1/3;
+}

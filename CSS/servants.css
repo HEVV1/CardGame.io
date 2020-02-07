@@ -1,0 +1,51 @@
+.Saber{
+  background-image: url(https://pp.userapi.com/c854328/v854328317/9c21b/CVlm5Oi-NmM.jpg);
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Archer{
+  background-image: url(https://pp.userapi.com/c857616/v857616267/1bb2c/tZCzHOtY6L8.jpg);
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Lancer{
+  background-image: url(https://pp.userapi.com/c857616/v857616267/1bb47/trAB659xsJk.jpg);
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Rider{
+  background-image: url(https://pp.userapi.com/c850020/v850020267/1dac5d/RWlnUbemBes.jpg);
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Assassin{
+  background-image: url(https://pp.userapi.com/c855524/v855524267/98bfc/eDakuRFb4Zw.jpg);
+  width: 200px;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Berserker{
+  background-image: url(https://pp.userapi.com/c855524/v855524267/98c05/5pXtLgeehg0.jpg);
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -190px 0px;
+}
+.Caster{
+  background-image: url(https://pp.userapi.com/c855524/v855524267/98c33/yFe-jdhLiTg.jpg);
+  width: 200px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-position: -150px 0px;
+}

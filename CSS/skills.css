@@ -1,0 +1,12 @@
+#skillsBase{
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  transition: ease-in-out 150ms;
+}
+#skillsBase:hover{
+  transform: scale(1.2);
+}
+.Excalibur{
+  background-image: url(https://sun9-35.userapi.com/c854024/v854024337/c054f/UYgel_Z1pHo.jpg);
+}
